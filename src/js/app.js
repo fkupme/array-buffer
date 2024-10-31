@@ -1,2 +1,2 @@
-import './math'
-import './arrayBufferConverter'
+import './math';
+import './arrayBufferConverter';

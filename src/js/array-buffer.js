@@ -7,5 +7,5 @@ export default function getBuffer() {
       bufferView[i] = input.charCodeAt(i);
     }
     return buffer;
-  })(data);
-}
+  })(data)
+};

@@ -1,6 +1,6 @@
 class Char {
   constructor() {
-    this.damage = null
+    this.damage = null;
     this.state = null;
   }
   attack(range) {
@@ -20,6 +20,12 @@ class Char {
         return { ratio, stoned };
     }
   }
+  get state(){
+    return this._state;
+  }
+  set state(state) {
+    this._state = state;
+  }
   setState(state) {
     this.state = state;
   }
@@ -29,14 +35,12 @@ export class Magician extends Char {
   constructor(damage) {
     super(damage);
 		this.damage = damage;
-    this.state = 'normal';
   }
 }
 
 export class Daemon extends Char {
   constructor(damage) {
     super(damage)
-    this.damage = damage
-    this.state = 'normal'
+    this.damage = damage;
   }
 }
