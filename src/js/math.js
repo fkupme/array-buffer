@@ -3,6 +3,12 @@ class Char {
     this.damage = null;
     this.state = null;
   }
+  get damage() {
+    return this._damage;
+  }
+  set damage(damage) {
+    this._damage = damage;
+  }
   attack(range) {
     const ratio = this.ratio(range);
 		const reducedDmg = this.damage * ratio.ratio - ratio.stoned
